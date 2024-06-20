@@ -9,6 +9,6 @@ Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->purpose('Display an inspiring quote')->hourly();
 
-Prompt::fallbackWhen(shell_exec('tput lines') < 8);
+// Prompt::fallbackWhen(shell_exec('tput lines') < 8);
 
 // Schedule::command('telescope:prune')->daily();
