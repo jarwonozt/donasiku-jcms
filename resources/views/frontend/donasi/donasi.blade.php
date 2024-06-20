@@ -19,6 +19,9 @@
 <body>
 
     <div class="hk-wrapper hk-pg-auth" data-footer="simple">
+
+        {{-- <div class="chat-popover shadow-xl"><p></p></div> --}}
+
         <!-- Main Content -->
         <div class="hk-pg-wrapper py-0">
             <div class="hk-pg-body py-0">
@@ -133,6 +136,11 @@
                                                         class="form-control form-control-lg" placeholder="Hamba Allah"
                                                         required>
                                                 </div>
+                                                <div class="form-group col-lg-12">
+                                                    <label for="email" class="form-label fw-bold">Email (opsional)</label>
+                                                    <input type="email" id="email" name="email"
+                                                        class="form-control form-control-lg" placeholder="your@gmail.com">
+                                                </div>
                                                 <button id="pay-button" class="btn btn-primary btn-uppercase btn-block mt-4 mb-2">Lanjutkan Pembayaran</button>
                                             </div>
 
@@ -219,6 +227,7 @@
 
             var objName = $('input[name="objective"]:checked').val();
             var amount = $('#amount').val();
+            var email = $('#email').val();
 
             if(amount < 10000) {
                 alert('Minimal donasi Rp 10.000');
@@ -229,7 +238,7 @@
                     _method: 'POST',
                     _token: '{{ csrf_token() }}',
                     name: $('#name').val(),
-                    // email: 'jarwonozt@gmail.com',
+                    email: email == null ? 'jarwonozt@gmail.com' : email,
                     amount: amount,
                     objective: objName
                 },

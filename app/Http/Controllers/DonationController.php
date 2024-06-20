@@ -26,8 +26,7 @@ class DonationController extends Controller
                 $donation = Donation::create([
                     'code'      => 'DONATION-' . mt_rand(100000, 999999),
                     'name'      => $request->name,
-                    // 'email'     => $request->email,
-                    'email'     => 'jarwonozt@gmail.com',
+                    'email'     => $request->email,
                     'amount'    => $request->amount,
                     'objective' => $request->objective,
                     // 'note'      => $request->note,
@@ -40,8 +39,7 @@ class DonationController extends Controller
                     ],
                     'customer_details' => [
                         'first_name' => $donation->name,
-                        // 'email'      => $donation->email,
-                        'email'      => 'jarwonozt@gmail.com',
+                        'email'      => $donation->email,
                     ],
                     'item_details' => [
                         [
