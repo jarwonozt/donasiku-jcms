@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\PaymentCallbackController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\FileController;
 use App\Http\Controllers\PostController;
@@ -20,6 +21,7 @@ Route::get('/donasi', function(){
     return view('frontend.donasi.donasi');
 });
 Route::post('donation/pay', [App\Http\Controllers\DonationController::class, 'pay'])->name('donation.pay');
+Route::post('/payment/callback', [PaymentCallbackController::class, 'midtransCallback']);
 
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
     \UniSharp\LaravelFilemanager\Lfm::routes();
