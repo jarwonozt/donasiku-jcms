@@ -34,7 +34,7 @@ class PaymentCallbackController extends Controller
                 Mail::send('frontend.donasi.email-message', $email_data, function ($message) use ($email_data) {
                     $message->to($email_data['email'], $email_data['name'])
                         ->subject('Konfirmasi Pembayaran Donasi')
-                        ->from(config('app.email'), config('app.name'));
+                        ->from('jarwonozt@gmail.com', config('app.name'));
                 });
             }
         } elseif ($transactionStatus == 'cancel' || $transactionStatus == 'deny' || $transactionStatus == 'expire') {
