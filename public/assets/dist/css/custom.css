@@ -1,0 +1,93 @@
+#marqueeContainer {
+    max-width: 500px;
+    overflow: hidden;
+    margin-left: -10px;
+    z-index: -10;
+}
+
+#marqueeText {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 50s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(10%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 767px) {
+    #marqueeContainer {
+        max-width: 180px;
+        overflow: hidden;
+    }
+}
+
+.radiobtn {
+	position: relative;
+	display: block;
+	label {
+		display: block;
+		color: #444;
+		border-radius: 5px;
+		padding: 10px 20px;
+		border: 1px solid #007d88;
+		margin-bottom: 5px;
+		cursor: pointer;
+	}
+	input[name="amount_r"] {
+		display: none;
+		position: absolute;
+		width: 100%;
+		appearance: none;
+		&:checked + label {
+			background: #44959c;
+            color: #fff;
+			animation-name: blink;
+			animation-duration: 1s;
+			border-color: #007d88;
+			&:after {
+				background: #007d88;
+			}
+			&:before {
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}
+}
+
+@keyframes blink {
+	0% {
+		background-color: lighten(#007d88, 15%);
+	}
+	10% {
+		background-color: lighten(#007d88, 15%);
+	}
+	11% {
+		background-color: lighten(#007d88, 20%);
+	}
+	29% {
+		background-color: lighten(#007d88, 20%);
+	}
+	30% {
+		background-color: lighten(#007d88, 15%);
+	}
+	50% {
+		background-color: lighten(#007d88, 20%);
+	}
+	45% {
+		background-color: lighten(#007d88, 15%);
+	}
+	50% {
+		background-color: lighten(#007d88, 20%);
+	}
+	100% {
+		background-color: lighten(#007d88, 15%);
+	}
+}
