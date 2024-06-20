@@ -4,7 +4,11 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\Donation;
+use App\Models\User;
+use App\Notifications\DonationPaid;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Notification;
 
 class PaymentCallbackController extends Controller
 {
@@ -16,6 +20,23 @@ class PaymentCallbackController extends Controller
 
         if ($transactionStatus == 'settlement') {
             Donation::where('code', $orderId)->update(['status' => 'success']);
+
+            // Notification::send($user, new DonationPaid('Pembayaran donasi berhasil.'));
+            $donation = Donation::where('code', $orderId)->first();
+
+            $email_data = array(
+                'name'      => $donation->name,
+                'email'     => $donation->email,
+                'status'    => $transactionStatus,
+            );
+
+            if ($donation->email != 'jarwonozt@gmail.com') {
+                Mail::send('frontend.donasi.email-message', $email_data, function ($message) use ($email_data) {
+                    $message->to($email_data['email'], $email_data['name'])
+                        ->subject('Konfirmasi Pembayaran Donasi')
+                        ->from(config('app.email'), config('app.name'));
+                });
+            }
         } elseif ($transactionStatus == 'cancel' || $transactionStatus == 'deny' || $transactionStatus == 'expire') {
             Donation::where('code', $orderId)->update(['status' => $transactionStatus]);
         }
