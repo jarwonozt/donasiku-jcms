@@ -19,6 +19,15 @@ class DonationController extends Controller
         Config::$is3ds        = config('services.midtrans.is3ds');
     }
 
+    public function detailTransaction(Request $request)
+    {
+        $donation = Donation::where('code', $request->order_id)->orWhere('code', $request->order_id_mobile)->latest()->first();
+
+        return view('frontend.donasi.detail', [
+            'data' => $donation
+        ]);
+    }
+
     public function detail(Request $request)
     {
         // dd($request->transaction_id);

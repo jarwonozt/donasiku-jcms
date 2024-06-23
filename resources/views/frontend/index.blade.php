@@ -16,7 +16,7 @@
                     <div class="auth-content py-md-0 py-8">
                         <div class="w-100">
                             <div class="row">
-                                <div class="col-xxl-9 col-xl-8 col-lg-11">
+                                <div class="col-xxl-9 col-xl-8 col-lg-11 text-center">
                                     <h1 class="display-4 fw-bold mb-2">{{ jcms()->name }}</h1>
                                     <p class="p-lg">{{ jcms()->description }}</p>
                                     <a href="/donasi" class="btn btn-primary mt-4">Donasi Sekarang</a>
@@ -28,4 +28,15 @@
             </div>
         </div>
     </div>
+    @push('scripts')
+        <script>
+            document.addEventListener('keydown', function(event) {
+                if (event.key === '/') {
+                    event.preventDefault(); // Prevent the default browser find functionality
+                    const searchField = document.getElementById('searchField'); // Replace 'searchField' with the ID of your search field
+                    searchField.focus(); // Focus on the search field
+                }
+            });
+        </script>
+    @endpush
 </x-layouts.app>

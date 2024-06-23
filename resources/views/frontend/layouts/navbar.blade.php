@@ -17,9 +17,10 @@
                 <!-- Brand -->
                 <div class="menu-header d-xl-none">
                     <span>
-                        <a class="navbar-brand" href="index.html">
-                            <img class="brand-img img-fluid" src="{{ asset('assets') }}/dist/img/brand-sm.svg" alt="brand" />
-                            <img class="brand-img img-fluid" src="{{ asset('assets') }}/dist/img/{{ jcms()->name }}.svg" alt="brand" />
+                        <a class="navbar-brand" href="/">
+                            <img class="brand-img img-fluid"
+                            src="{{ jcms()->logo ?? asset('assets/dist/img/jampack.svg') }}" alt="brand"
+                            width="170" height="30" />
                         </a>
                         <button class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover navbar-toggle">
                             <span class="icon">
@@ -89,12 +90,12 @@
         <!-- End Nav -->
         <div class="nav-end-wrap">
             <!-- Search -->
-            <form class="dropdown navbar-search me-2">
+            <form class="dropdown navbar-search me-2" action="{{ route('transaction.detail') }}" method="GET">
                 <div class="dropdown-toggle no-caret" data-bs-toggle="dropdown" data-dropdown-animation data-bs-auto-close="outside">
                     <a href="#" class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover  d-xl-none"><span class="icon"><span class="feather-icon"><i data-feather="search"></i></span></span></a>
                     <div class="input-group d-xl-flex d-none">
                         <span class="input-affix-wrapper input-search affix-border">
-                            <input type="text" class="form-control  bg-transparent"  data-navbar-search-close="false" placeholder="Search..." aria-label="Search">
+                            <input type="text" name="order_id" id="searchField" class="form-control bg-transparent"  data-navbar-search-close="false" placeholder="Cek Transaksi..." aria-label="Search">
                             <span class="input-suffix"><span>/</span>
                                 <span class="btn-input-clear"><i class="bi bi-x-circle-fill"></i></span>
                                 <span class="spinner-border spinner-border-sm input-loader text-primary" role="status">
@@ -109,7 +110,7 @@
                     <div class="dropdown-item d-xl-none bg-transparent">
                         <div class="input-group mobile-search">
                             <span class="input-affix-wrapper input-search">
-                                <input type="text" class="form-control" placeholder="Search..." aria-label="Search">
+                                <input type="text" name="order_id_mobile" id="searchField" class="form-control" placeholder="Cek Transaksi..." aria-label="Search">
                                 <span class="input-suffix">
                                     <span class="btn-input-clear"><i class="bi bi-x-circle-fill"></i></span>
                                     <span class="spinner-border spinner-border-sm input-loader text-primary" role="status">
@@ -121,95 +122,13 @@
                     </div>
                     <!--/ Mobile Search -->
                     <div data-simplebar class="dropdown-body p-2">
-                        <h6 class="dropdown-header">Recent Search
-                        </h6>
+                        <h6 class="dropdown-header">Silakan masukan ID Transaksi</h6>
                         <div class="dropdown-item bg-transparent">
-                            <a href="#" class="badge badge-pill badge-soft-secondary">Grunt</a>
-                            <a href="#" class="badge badge-pill badge-soft-secondary">Node JS</a>
-                            <a href="#" class="badge badge-pill badge-soft-secondary">SCSS</a>
+                            Contoh :
+                            <a href="#" class="badge badge-pill badge-soft-secondary">DONATION-124958</a>
                         </div>
-                        <div class="dropdown-divider"></div>
-                        <h6 class="dropdown-header">Help
-                        </h6>
-                        <a href="javascript:void(0);" class="dropdown-item">
-                            <div class="media align-items-center">
-                                <div class="media-head me-2">
-                                    <div class="avatar avatar-icon avatar-xs avatar-soft-light avatar-rounded">
-                                        <span class="initial-wrap">
-                                            <span class="svg-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-corner-down-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                    <path d="M6 6v6a3 3 0 0 0 3 3h10l-4 -4m0 8l4 -4"></path>
-                                                 </svg>
-                                            </span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    How to setup theme?
-                                </div>
-                            </div>
-                        </a>
-                        <a href="javascript:void(0);" class="dropdown-item">
-                            <div class="media align-items-center">
-                                <div class="media-head me-2">
-                                    <div class="avatar avatar-icon avatar-xs avatar-soft-light avatar-rounded">
-                                        <span class="initial-wrap">
-                                            <span class="svg-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-corner-down-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                    <path d="M6 6v6a3 3 0 0 0 3 3h10l-4 -4m0 8l4 -4"></path>
-                                                 </svg>
-                                            </span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    View detail documentation
-                                </div>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <h6 class="dropdown-header">Users
-                        </h6>
-                        <a href="javascript:void(0);" class="dropdown-item">
-                            <div class="media align-items-center">
-                                <div class="media-head me-2">
-                                    <div class="avatar avatar-xs avatar-rounded">
-                                        <img src="{{ asset('assets') }}/dist/img/avatar3.jpg" alt="user" class="avatar-img">
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    Sarah Jone
-                                </div>
-                            </div>
-                        </a>
-                        <a href="javascript:void(0);" class="dropdown-item">
-                            <div class="media align-items-center">
-                                <div class="media-head me-2">
-                                    <div class="avatar avatar-xs avatar-soft-primary avatar-rounded">
-                                        <span class="initial-wrap">J</span>
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    Joe Jackson
-                                </div>
-                            </div>
-                        </a>
-                        <a href="javascript:void(0);" class="dropdown-item">
-                            <div class="media align-items-center">
-                                <div class="media-head me-2">
-                                    <div class="avatar avatar-xs avatar-rounded">
-                                        <img src="{{ asset('assets') }}/dist/img/avatar4.jpg" alt="user" class="avatar-img">
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    Maria Richard
-                                </div>
-                            </div>
-                        </a>
                     </div>
-                    <div class="dropdown-footer d-xl-flex d-none"><a href="#"><u>Search all</u></a></div>
+                    <div class="dropdown-footer d-xl-flex d-none"><button type="submit" class="btn btn-primary btn-block">CARI</button></div>
                 </div>
             </form>
             <!-- /Search -->

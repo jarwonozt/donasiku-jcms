@@ -26,7 +26,7 @@
                         <div class="col position-relative mx-auto">
                             <div class="pt-lg-8 pt-md-8 pt-3 pb-md-8 pb-13">
                                 <div class="text-center mb-4">
-                                    <a class="navbar-brand me-0" href="index.html">
+                                    <a class="navbar-brand me-0" href="/">
                                         <img class="brand-img d-inline-block" src="{{ jcms()->logo }}" alt="brand">
                                     </a>
                                 </div>

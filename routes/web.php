@@ -22,6 +22,7 @@ Route::get('/donasi', function(){
 });
 Route::post('donation/pay', [App\Http\Controllers\DonationController::class, 'pay'])->name('donation.pay');
 Route::get('donation/detail', [App\Http\Controllers\DonationController::class, 'detail'])->name('donation.detail');
+Route::get('transaction/detail', [App\Http\Controllers\DonationController::class, 'detailTransaction'])->name('transaction.detail');
 Route::post('/payment/callback', [PaymentCallbackController::class, 'midtransCallback']);
 
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
