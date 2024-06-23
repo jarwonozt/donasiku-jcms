@@ -219,10 +219,10 @@
                             location.href = "/donation/detail?transaction_id="+data.snap_token;
                         },
                         onPending: function(result) {
-                            location.reload();
+                            location.href = "/donation/detail?transaction_id="+data.snap_token;
                         },
                         onError: function(result) {
-                            location.reload();
+                            location.href = "/donation/detail?transaction_id="+data.snap_token;
                         }
                     });
                     return false;
