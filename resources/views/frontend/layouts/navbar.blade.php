@@ -44,301 +44,35 @@
                         <div class="menu-group">
                             <ul class="navbar-nav flex-column">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">
-                                        <span class="nav-link-text">Dashboard</span>
-                                        <span class="badge badge-sm badge-soft-pink ms-xl-2 ms-auto">Hot</span>
+                                    <a class="nav-link" href="/">
+                                        <span class="nav-link-text">Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="/donasi">
+                                        <span class="nav-link-text">Donasi</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="/blog">
+                                        <span class="nav-link-text">Artikel</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_chat">
-                                        <span class="nav-link-text">Chat</span>
+                                    <a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_chat"><span class="nav-link-text">Layanan</span>
                                     </a>
-                                    <ul id="dash_chat" class="nav flex-column collapse   nav-children">
+                                    <ul id="dash_chat" class="nav flex-column collapse nav-children">
                                         <li class="nav-item">
                                             <ul class="nav flex-column">
                                                 <li class="nav-item">
-                                                    <a class="nav-link" href="chats.html"><span class="nav-link-text">Chats</span></a>
+                                                    <a class="nav-link" href="/open-donasi"><span class="nav-link-text">Penyaluran Zakat</span></a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link" href="chats-group.html"><span class="nav-link-text">Groups</span></a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="chats-contact.html"><span class="nav-link-text">Contacts</span></a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_wizard">
-                                                        <span class="nav-link-text">Chat Popup</span>
-                                                    </a>
-                                                    <ul id="dash_wizard" class="nav flex-column collapse   nav-children">
-                                                        <li class="nav-item">
-                                                            <ul class="nav flex-column">
-                                                                <li class="nav-item">
-                                                                    <a class="nav-link" href="chatpopup.html"><span class="nav-link-text">Direct Message</span></a>
-                                                                </li>
-                                                                <li class="nav-item">
-                                                                    <a class="nav-link" href="chatbot.html"><span class="nav-link-text">Chatbot Chat</span></a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
+                                                    <a class="nav-link" href="/kurban"><span class="nav-link-text">Kurban</span></a>
                                                 </li>
                                             </ul>
                                         </li>
                                     </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="email.html">
-                                        <span class="nav-link-text">Email</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_scrumboard">
-                                        <span class="nav-link-text">Scrumboard</span>
-                                    </a>
-                                    <ul id="dash_scrumboard" class="nav flex-column collapse   nav-children">
-                                        <li class="nav-item">
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="kanban-board.html"><span class="nav-link-text">Kanban</span></a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="projects-board.html"><span class="nav-link-text">Boards</span></a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="pipeline.html"><span class="nav-link-text">Pipeline</span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_contact">
-                                        <span class="nav-link-text">Contact</span>
-                                    </a>
-                                    <ul id="dash_contact" class="nav flex-column collapse   nav-children">
-                                        <li class="nav-item">
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="contact.html"><span class="nav-link-text">Contact List</span></a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="contact-cards.html"><span class="nav-link-text">Contact Cards</span></a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="edit-contact.html"><span class="nav-link-text">Edit Contact</span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_task">
-                                        <span class="nav-link-text position-relative">Todo
-                                            <span class="badge badge-danger badge-indicator position-absolute top-0 start-100"></span>
-                                        </span>
-                                    </a>
-                                    <ul id="dash_task" class="nav flex-column collapse   nav-children">
-                                        <li class="nav-item">
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="tasklist.html"><span class="nav-link-text">Tasklist</span></a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="gantt.html"><span class="nav-link-text">Gantt</span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_invoice">
-                                        <span class="nav-link-text">Invoices</span>
-                                    </a>
-                                    <ul id="dash_invoice" class="nav flex-column collapse   nav-children">
-                                        <li class="nav-item">
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="invoice-list.html"><span class="nav-link-text">Invoice List</span></a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="invoice-templates.html"><span class="nav-link-text">Invoice Templates</span></a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="create-invoice.html"><span class="nav-link-text">Create Invoice</span></a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="invoice-preview.html"><span class="nav-link-text">Invoice Preview</span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="calendar.html">
-                                        <span class="nav-link-text">Calendar</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_file">
-                                        <span class="nav-link-text">File Manager</span>
-                                    </a>
-                                    <ul id="dash_file" class="nav flex-column collapse  nav-children">
-                                        <li class="nav-item">
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="file-manager-list.html"><span class="nav-link-text">List</span></a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="file-manager-grid.html"><span class="nav-link-text">Grid</span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="gallery.html">
-                                        <span class="nav-link-text">Gallery</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_blog">
-                                        <span class="nav-link-text">Blog</span>
-                                    </a>
-                                    <ul id="dash_blog" class="nav flex-column collapse  nav-children">
-                                        <li class="nav-item">
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="posts.html"><span class="nav-link-text">Posts</span></a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="add-new-post.html"><span class="nav-link-text">Edit Posts</span></a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="post-detail.html"><span class="nav-link-text">Post Detail</span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_integ">
-                                        <span class="nav-link-text">Integrations</span>
-                                    </a>
-                                    <ul id="dash_integ" class="nav flex-column collapse  nav-children">
-                                        <li class="nav-item">
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="all-apps.html"><span class="nav-link-text">All Apps</span></a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="integrations-detail.html"><span class="nav-link-text">App Detail</span></a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="integrations.html"><span class="nav-link-text">Integrations</span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_pages">
-                                        <span class="nav-link-text">Authentication</span>
-                                    </a>
-                                    <ul id="dash_pages" class="nav flex-column collapse  nav-children">
-                                        <li class="nav-item">
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_log">
-                                                        <span class="nav-link-text">Log In</span>
-                                                    </a>
-                                                    <ul id="dash_log" class="nav flex-column collapse  nav-children">
-                                                        <li class="nav-item">
-                                                            <ul class="nav flex-column">
-                                                                <li class="nav-item">
-                                                                    <a class="nav-link" href="login.html"><span class="nav-link-text">Login</span></a>
-                                                                </li>
-                                                                <li class="nav-item">
-                                                                    <a class="nav-link" href="login-simple.html"><span class="nav-link-text">Login Simple</span></a>
-                                                                </li>
-                                                                <li class="nav-item">
-                                                                    <a class="nav-link" href="login-classic.html"><span class="nav-link-text">Login Classic</span></a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_sign">
-                                                        <span class="nav-link-text">Sign Up</span>
-                                                    </a>
-                                                    <ul id="dash_sign" class="nav flex-column collapse  nav-children">
-                                                        <li class="nav-item">
-                                                            <ul class="nav flex-column">
-                                                                <li class="nav-item">
-                                                                    <a class="nav-link" href="signup.html"><span class="nav-link-text">Signup</span></a>
-                                                                </li>
-                                                                <li class="nav-item">
-                                                                    <a class="nav-link" href="signup-simple.html"><span class="nav-link-text">Signup Simple</span></a>
-                                                                </li>
-                                                                <li class="nav-item">
-                                                                    <a class="nav-link" href="signup-classic.html"><span class="nav-link-text">Signup Classic</span></a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="lock-screen.html"><span class="nav-link-text">Lock Screen</span></a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="reset-password.html"><span class="nav-link-text">Reset Password</span></a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="404.html"><span class="nav-link-text">Error 404</span></a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="503.html"><span class="nav-link-text">Error 503</span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_profile">
-                                        <span class="nav-link-text">Profile</span>
-                                    </a>
-                                    <ul id="dash_profile" class="nav flex-column collapse  nav-children">
-                                        <li class="nav-item">
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="profile.html">
-                                                        <span class="nav-link-text">Profile</span>
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="edit-profile.html">
-                                                        <span class="nav-link-text">Edit Profile</span>
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="account.html">
-                                                        <span class="nav-link-text">Account</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://nubra-ui.hencework.com/" target="_blank">
-                                        <span class="nav-link-text">Documentation</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://nubra-ui.hencework.com/avatar.html" target="_blank">
-                                        <span class="nav-link-text">Components</span>
-                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -480,203 +214,57 @@
             </form>
             <!-- /Search -->
 
-            <ul class="navbar-nav flex-row">
-                <li class="nav-item">
-                    <a href="email.html" class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover"><span class="icon"><span class=" position-relative"><span class="feather-icon"><i data-feather="inbox"></i></span><span class="badge badge-sm badge-soft-primary badge-sm badge-pill position-top-end-overflow-1">4</span></span></span></a>
-                </li>
-                <li class="nav-item">
-                    <div class="dropdown dropdown-notifications">
-                        <a href="#" class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover dropdown-toggle no-caret" data-bs-toggle="dropdown" data-dropdown-animation role="button" aria-haspopup="true" aria-expanded="false"><span class="icon"><span class="position-relative"><span class="feather-icon"><i data-feather="bell"></i></span><span class="badge badge-success badge-indicator position-top-end-overflow-1"></span></span></span></a>
-                        <div class="dropdown-menu dropdown-menu-end p-0">
-                            <h6 class="dropdown-header px-4 fs-6">Notifications<a href="#" class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"><span class="icon"><span class="feather-icon"><i data-feather="settings"></i></span></span></a>
-                            </h6>
-                            <div data-simplebar class="dropdown-body  p-2">
-                                <a href="javascript:void(0);" class="dropdown-item">
+            @isset(auth()->user()->id)
+                <ul class="navbar-nav flex-row">
+                    <li class="nav-item">
+                        <div class="dropdown ps-2">
+                            <a class=" dropdown-toggle no-caret" href="#" role="button" data-bs-display="static"
+                                data-bs-toggle="dropdown" data-dropdown-animation data-bs-auto-close="outside"
+                                aria-expanded="false">
+                                <div class="avatar avatar-rounded avatar-xs">
+                                    <img src="{{ auth()->user()->image ?? auth()->user()->avatar }}" alt="user"
+                                        class="avatar-img">
+                                </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <div class="p-2">
                                     <div class="media">
-                                        <div class="media-head">
-                                            <div class="avatar avatar-rounded avatar-sm">
-                                                <img src="{{ asset('assets') }}/dist/img/avatar2.jpg" alt="user" class="avatar-img">
+                                        <div class="media-head me-2">
+                                            <div class="avatar avatar-rounded avatar-xs">
+                                                <img src="{{ auth()->user()->image ?? auth()->user()->avatar }}"
+                                                    alt="user" class="avatar-img">
                                             </div>
                                         </div>
                                         <div class="media-body">
-                                            <div>
-                                                <div class="notifications-text">Morgan Freeman accepted your invitation to join the team</div>
-                                                <div class="notifications-info">
-                                                    <span class="badge badge-soft-success">Collaboration</span>
-                                                    <div class="notifications-time">Today, 10:14 PM</div>
-                                                </div>
+                                            <div class="dropdown">
+                                                <a href="#" class="d-block dropdown-toggle link-dark fw-medium"
+                                                    data-bs-toggle="dropdown" data-dropdown-animation
+                                                    data-bs-auto-close="inside">{{ auth()->user()->name }}</a>
                                             </div>
+                                            <div class="fs-7">{{ auth()->user()->email }}</div>
+                                            <div class="fs-7 badge badge-primary badge-sm">
+                                                {{ strtoupper(auth()->user()->getRoleNames()[0]) }}</div>
                                         </div>
-                                    </div>
-                                </a>
-                                <a href="javascript:void(0);" class="dropdown-item">
-                                    <div class="media">
-                                        <div class="media-head">
-                                            <div class="avatar  avatar-icon avatar-sm avatar-success avatar-rounded">
-                                                <span class="initial-wrap">
-                                                    <span class="feather-icon"><i data-feather="inbox"></i></span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="media-body">
-                                            <div>
-                                                <div class="notifications-text">New message received from Alan Rickman</div>
-                                                <div class="notifications-info">
-                                                    <div class="notifications-time">Today, 7:51 AM</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="javascript:void(0);" class="dropdown-item">
-                                    <div class="media">
-                                        <div class="media-head">
-                                            <div class="avatar  avatar-icon avatar-sm avatar-pink avatar-rounded">
-                                                <span class="initial-wrap">
-                                                    <span class="feather-icon"><i data-feather="clock"></i></span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="media-body">
-                                            <div>
-                                                <div class="notifications-text">You have a follow up with {{ jcms()->name }} Head on Friday, Dec 19 at 9:30 am</div>
-                                                <div class="notifications-info">
-                                                    <div class="notifications-time">Yesterday, 9:25 PM</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="javascript:void(0);" class="dropdown-item">
-                                    <div class="media">
-                                        <div class="media-head">
-                                            <div class="avatar avatar-sm avatar-rounded">
-                                                <img src="{{ asset('assets') }}/dist/img/avatar3.jpg" alt="user" class="avatar-img">
-                                            </div>
-                                        </div>
-                                        <div class="media-body">
-                                            <div>
-                                                <div class="notifications-text">Application of Sarah Williams is waiting for your approval</div>
-                                                <div class="notifications-info">
-                                                    <div class="notifications-time">Today 10:14 PM</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="javascript:void(0);" class="dropdown-item">
-                                    <div class="media">
-                                        <div class="media-head">
-                                            <div class="avatar avatar-sm avatar-rounded">
-                                                <img src="{{ asset('assets') }}/dist/img/avatar10.jpg" alt="user" class="avatar-img">
-                                            </div>
-                                        </div>
-                                        <div class="media-body">
-                                            <div>
-                                                <div class="notifications-text">Winston Churchil shared a document with you</div>
-                                                <div class="notifications-info">
-                                                    <span class="badge badge-soft-violet">File Manager</span>
-                                                    <div class="notifications-time">2 Oct, 2021</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="javascript:void(0);" class="dropdown-item">
-                                    <div class="media">
-                                        <div class="media-head">
-                                            <div class="avatar  avatar-icon avatar-sm avatar-danger avatar-rounded">
-                                                <span class="initial-wrap">
-                                                    <span class="feather-icon"><i data-feather="calendar"></i></span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="media-body">
-                                            <div>
-                                                <div class="notifications-text">Last 2 days left for the project to be completed</div>
-                                                <div class="notifications-info">
-                                                    <span class="badge badge-soft-orange">Updates</span>
-                                                    <div class="notifications-time">14 Sep, 2021</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="dropdown-footer"><a href="#"><u>View all notifications</u></a></div>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div class="dropdown ps-2">
-                        <a class=" dropdown-toggle no-caret" href="#" role="button" data-bs-display="static" data-bs-toggle="dropdown" data-dropdown-animation data-bs-auto-close="outside" aria-expanded="false">
-                            <div class="avatar avatar-rounded avatar-xs">
-                                <img src="{{ asset('assets') }}/dist/img/avatar12.jpg" alt="user" class="avatar-img">
-                            </div>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                            <div class="p-2">
-                                <div class="media">
-                                    <div class="media-head me-2">
-                                        <div class="avatar avatar-primary avatar-sm avatar-rounded">
-                                            <span class="initial-wrap">Hk</span>
-                                        </div>
-                                    </div>
-                                    <div class="media-body">
-                                        <div class="dropdown">
-                                            <a href="#" class="d-block dropdown-toggle link-dark fw-medium"  data-bs-toggle="dropdown" data-dropdown-animation data-bs-auto-close="inside">Hencework</a>
-                                            <div class="dropdown-menu dropdown-menu-end">
-                                                <div class="p-2">
-                                                    <div class="media align-items-center active-user mb-3">
-                                                        <div class="media-head me-2">
-                                                            <div class="avatar avatar-primary avatar-xs avatar-rounded">
-                                                                <span class="initial-wrap">Hk</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <a href="#" class="d-flex align-items-center link-dark">Hencework <i class="ri-checkbox-circle-fill fs-7 text-primary ms-1"></i></a>
-                                                            <a href="#" class="d-block fs-8 link-secondary"><u>Manage your account</u></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="media align-items-center mb-3">
-                                                        <div class="media-head me-2">
-                                                            <div class="avatar avatar-xs avatar-rounded">
-                                                                <img src="{{ asset('assets') }}/dist/img/avatar12.jpg" alt="user" class="avatar-img">
-                                                            </div>
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <a href="#" class="d-block link-dark">{{ jcms()->name }} Team</a>
-                                                            <a href="#" class="d-block fs-8 link-secondary">contact@hencework.com</a>
-                                                        </div>
-                                                    </div>
-                                                    <button class="btn btn-block btn-outline-light btn-sm">
-                                                        <span><span class="icon"><span class="feather-icon"><i data-feather="plus"></i></span></span>
-                                                        <span>Add Account</span></span>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="fs-7">contact@hencework.com</div>
-                                        <a href="#" class="d-block fs-8 link-secondary"><u>Sign Out</u></a>
                                     </div>
                                 </div>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="{{ route('dashboard') }}">Dashboard</a>
+                                <a class="dropdown-item" href="{{ route('users.edit', auth()->user()->id) }}">Setting</a>
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                        onclick="event.preventDefault();
+                                this.closest('form').submit(); "
+                                        role="button">
+                                        <i data-acorn-icon="logout" class="" data-acorn-size="17"></i>
+                                        <span class="align-middle">Logout</span>
+                                    </a>
+                                </form>
                             </div>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="profile.html">Profile</a>
-                            <a class="dropdown-item" href="#"><span class="me-2">Offers</span><span class="badge badge-sm badge-soft-pink">2</span></a><div class="dropdown-divider"></div>
-                            <h6 class="dropdown-header">Manage Account</h6>
-                            <a class="dropdown-item" href="#"><span class="dropdown-icon feather-icon"><i data-feather="credit-card"></i></span><span>Payment methods</span></a>
-                            <a class="dropdown-item" href="#"><span class="dropdown-icon feather-icon"><i data-feather="check-square"></i></span><span>Subscriptions</span></a>
-                            <a class="dropdown-item" href="#"><span class="dropdown-icon feather-icon"><i data-feather="settings"></i></span><span>Settings</span></a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#"><span class="dropdown-icon feather-icon"><i data-feather="tag"></i></span><span>Raise a ticket</span></a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Terms & Conditions</a>
-                            <a class="dropdown-item" href="#">Help & Support</a>
                         </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            @endisset
         </div>
         <!-- /End Nav -->
     </div>

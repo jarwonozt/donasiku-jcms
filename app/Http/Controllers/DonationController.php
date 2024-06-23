@@ -19,6 +19,16 @@ class DonationController extends Controller
         Config::$is3ds        = config('services.midtrans.is3ds');
     }
 
+    public function detail(Request $request)
+    {
+        // dd($request->transaction_id);
+        $donation = Donation::where('snap_token', $request->transaction_id)->latest()->first();
+
+        return view('frontend.donasi.detail', [
+            'data' => $donation
+        ]);
+    }
+
     public function pay(Request $request)
     {
         try {

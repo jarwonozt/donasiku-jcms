@@ -23,28 +23,7 @@
             <div class="hk-pg-body py-0">
                 <div class="container-fluid">
                     <div class="row auth-split">
-                        <div
-                            class="col-xl-5 col-lg-6 col-md-5 d-md-block d-none bg-primary-dark-5 bg-opacity-50 position-relative">
-                            <img class="bg-img" src="{{ asset('assets') }}/dist/img/donate.png" alt="bg-img">
-                            <div class="auth-content py-8">
-                                <div class="row">
-                                    <div class="col-xxl-8 mx-auto">
-                                        <div class="text-center">
-                                            <h3 class="text-white mb-2">Berikan dampak positif bagi diri sendiri maupun bagi masyarakat luas.</h3>
-                                        </div>
-                                        <ul class="list-icon text-white mt-4">
-                                            <li class="mb-1">
-                                                <p><i class="ri-check-fill"></i><span>Dengan setiap sumbangan kecil, kita bisa membuat perubahan besar. Mari berbagi dan jadikan dunia tempat yang lebih baik!</span></p>
-                                            </li>
-                                            <li class="mb-1">
-                                                <p><i class="ri-check-fill"></i><span>Kebaikanmu adalah harapan bagi mereka yang membutuhkan. Ayo donasi sekarang, karena setiap bantuanmu berarti!</span></p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-7 col-lg-6 col-md-7 col-sm-10 position-relative mx-auto">
+                        <div class="col position-relative mx-auto">
                             <div class="pt-lg-8 pt-md-8 pt-3 pb-md-8 pb-13">
                                 <div class="text-center mb-4">
                                     <a class="navbar-brand me-0" href="index.html">
@@ -55,7 +34,7 @@
                                     <div class="row">
                                         <div class="col-xxl-7 col-xl-7 col-lg-10 mx-auto">
                                             <h3 class="text-center fw-bold mb-4 text-uppercase">Bayar Infaq & Sedekah</h4>
-                                            <div class="row gx-3 border rounded border-primary p-2 m-1 mb-4">
+                                            <div class="row gx-3 p-3 m-1 mb-4" id="body-donation">
                                                 <div class="form-group col-lg-12 p-0">
                                                     <label for="forTo" class="form-label fw-bold">Tujuan <sup
                                                             class="text-danger">*</sup></label>
@@ -136,7 +115,7 @@
                                                 <div class="form-group col-lg-12 p-0">
                                                     <label for="email" class="form-label fw-bold">Email (opsional)</label>
                                                     <input type="email" id="email" name="email"
-                                                        class="form-control form-control-lg" placeholder="your@gmail.com">
+                                                        class="form-control form-control-lg" placeholder="username@gmail.com">
                                                 </div>
                                                 <button id="pay-button" class="btn btn-primary btn-uppercase btn-block mt-4 mb-2">Lanjutkan Pembayaran</button>
                                             </div>
@@ -236,7 +215,8 @@
                 function(data, status) {
                     snap.pay(data.snap_token, {
                         onSuccess: function(result) {
-                            location.reload();
+                            // location.reload();
+                            location.href = "/donation/detail?transaction_id="+data.snap_token;
                         },
                         onPending: function(result) {
                             location.reload();

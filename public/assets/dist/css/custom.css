@@ -28,15 +28,18 @@
     }
 }
 
+#body-donation {
+    border: 1px solid #007d88!important;
+    border-radius: 5px;
+}
 .radiobtn {
 	position: relative;
 	display: block;
     margin: 5px;
     font-weight: bold;
-
 	label {
 		display: block;
-		color: #444;
+		color: #007d88;
 		border-radius: 5px;
 		padding: 10px 20px;
 		border: 1px solid #007d88;

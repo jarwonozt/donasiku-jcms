@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 use UniSharp\LaravelFilemanager\Lfm;
 
 Route::get('/', function () {
-    return view('frontend.donasi.donasi');
+    return view('frontend.index');
 });
 
 Route::get('/donasi', function(){
@@ -21,6 +21,7 @@ Route::get('/donasi', function(){
     return view('frontend.donasi.donasi');
 });
 Route::post('donation/pay', [App\Http\Controllers\DonationController::class, 'pay'])->name('donation.pay');
+Route::get('donation/detail', [App\Http\Controllers\DonationController::class, 'detail'])->name('donation.detail');
 Route::post('/payment/callback', [PaymentCallbackController::class, 'midtransCallback']);
 
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
