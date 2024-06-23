@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <head>
-    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ jcms()->name }}</title>
     <meta name="description" content="{{ jcms()->description }}" />
-    <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- CSS -->
     <link href="{{ asset('assets') }}/dist/css/style.css" rel="stylesheet" type="text/css">
     <link href="{{ asset('assets') }}/dist/css/custom.css" rel="stylesheet" type="text/css">
 </head>
@@ -22,12 +19,9 @@
 
         {{-- <div class="chat-popover shadow-xl"><p></p></div> --}}
 
-        <!-- Main Content -->
         <div class="hk-pg-wrapper py-0">
             <div class="hk-pg-body py-0">
-                <!-- Container -->
                 <div class="container-fluid">
-                    <!-- Row -->
                     <div class="row auth-split">
                         <div
                             class="col-xl-5 col-lg-6 col-md-5 d-md-block d-none bg-primary-dark-5 bg-opacity-50 position-relative">
@@ -60,9 +54,9 @@
                                 <form class="w-100">
                                     <div class="row">
                                         <div class="col-xxl-7 col-xl-7 col-lg-10 mx-auto">
-                                            <h4 class="text-center mb-4 text-uppercase">Bayar Infaq & Sedekah</h4>
+                                            <h3 class="text-center fw-bold mb-4 text-uppercase">Bayar Infaq & Sedekah</h4>
                                             <div class="row gx-3 border rounded border-primary p-2 m-1 mb-4">
-                                                <div class="form-group col-lg-12">
+                                                <div class="form-group col-lg-12 p-0">
                                                     <label for="forTo" class="form-label fw-bold">Tujuan <sup
                                                             class="text-danger">*</sup></label>
                                                     <div>
@@ -80,7 +74,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="form-group col-lg-12">
+                                                <div class="form-group col-lg-12 p-0">
                                                     <label for="amount" class="form-label fw-bold">Nominal Sedekah
                                                         <sup class="text-danger">*</sup></label>
                                                     <span class="input-affix-wrapper">
@@ -90,38 +84,41 @@
                                                             placeholder="0" value="0" aria-label="Nominal"
                                                             aria-describedby="basic-addon1" required>
                                                     </span>
-                                                    <div class="row mt-2">
-                                                        <div class="col-4">
+                                                </div>
+                                                <div class="form-group">
+
+                                                    <div class="row mt-2 p-0">
+                                                        <div class="col-4 p-0">
                                                             <div class="radiobtn">
                                                                 <input id="amount_r_1" name="amount_r" value="10000" type="radio">
                                                                 <label class="form-check-label" for="amount_r_1">10.000</label>
                                                             </div>
                                                         </div>
-                                                        <div class="col-4">
+                                                        <div class="col-4 p-0">
                                                             <div class="radiobtn">
                                                                 <input id="amount_r_2" name="amount_r" class="form-check-input" value="25000" type="radio">
                                                                 <label class="form-check-label" for="amount_r_2">25.000</label>
                                                             </div>
                                                         </div>
-                                                        <div class="col-4">
+                                                        <div class="col-4 p-0">
                                                             <div class="radiobtn">
                                                                 <input id="amount_r_3" name="amount_r" class="form-check-input" value="35000" type="radio">
                                                                 <label class="form-check-label" for="amount_r_3">35.000</label>
                                                             </div>
                                                         </div>
-                                                        <div class="col-4">
+                                                        <div class="col-4 p-0">
                                                             <div class="radiobtn">
                                                                 <input id="amount_r_4" name="amount_r" class="form-check-input" value="50000" type="radio">
                                                                 <label class="form-check-label" for="amount_r_4">50.000</label>
                                                             </div>
                                                         </div>
-                                                        <div class="col-4">
+                                                        <div class="col-4 p-0">
                                                             <div class="radiobtn">
                                                                 <input id="amount_r_5" name="amount_r" class="form-check-input" value="70000" type="radio">
                                                                 <label class="form-check-label" for="amount_r_5">70.000</label>
                                                             </div>
                                                         </div>
-                                                        <div class="col-4">
+                                                        <div class="col-4 p-0">
                                                             <div class="radiobtn">
                                                                 <input id="amount_r_6" name="amount_r" class="form-check-input" value="100000" type="radio">
                                                                 <label class="form-check-label" for="amount_r_6">100.000</label>
@@ -129,14 +126,14 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="form-group col-lg-12">
+                                                <div class="form-group col-lg-12 p-0">
                                                     <label for="name" class="form-label fw-bold">Atas Nama <sup
                                                             class="text-danger">*</sup></label>
                                                     <input type="text" id="name" name="name"
                                                         class="form-control form-control-lg" placeholder="Hamba Allah"
                                                         required>
                                                 </div>
-                                                <div class="form-group col-lg-12">
+                                                <div class="form-group col-lg-12 p-0">
                                                     <label for="email" class="form-label fw-bold">Email (opsional)</label>
                                                     <input type="email" id="email" name="email"
                                                         class="form-control form-control-lg" placeholder="your@gmail.com">
@@ -148,7 +145,6 @@
                                     </div>
                                 </form>
                             </div>
-                            <!-- Page Footer -->
                             <div class="hk-footer border-0">
                                 <footer class="container-xxl footer">
                                     <div class="row">
@@ -164,16 +160,11 @@
                                     </div>
                                 </footer>
                             </div>
-                            <!-- / Page Footer -->
                         </div>
                     </div>
-                    <!-- /Row -->
                 </div>
-                <!-- /Container -->
             </div>
-            <!-- /Page Body -->
         </div>
-        <!-- /Main Content -->
     </div>
 
     <!-- jQuery -->

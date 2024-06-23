@@ -31,6 +31,9 @@
 .radiobtn {
 	position: relative;
 	display: block;
+    margin: 5px;
+    font-weight: bold;
+
 	label {
 		display: block;
 		color: #444;
@@ -39,6 +42,7 @@
 		border: 1px solid #007d88;
 		margin-bottom: 5px;
 		cursor: pointer;
+        text-align: center;
 	}
 	input[name="amount_r"] {
 		display: none;
