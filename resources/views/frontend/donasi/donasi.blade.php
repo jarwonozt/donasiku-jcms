@@ -42,14 +42,7 @@
                                                         <div class="form-check mb-1">
                                                             <input id="radio_1" name="objective"
                                                                 class="form-check-input" value="Infaq & Sedekah" type="radio" required>
-                                                            <label class="form-check-label" for="radio_1">Infaq &
-                                                                Sedekah</label>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <input id="radio_2" name="objective"
-                                                                class="form-check-input" value="Pembangunan" type="radio">
-                                                            <label class="form-check-label"
-                                                                for="radio_2">Pembangunan</label>
+                                                            <label class="form-check-label" for="radio_1">Pengembangan NU Online Jakarta</label>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -112,11 +105,11 @@
                                                         class="form-control form-control-lg" placeholder="Hamba Allah"
                                                         required>
                                                 </div>
-                                                <div class="form-group col-lg-12 p-0">
+                                                {{-- <div class="form-group col-lg-12 p-0">
                                                     <label for="email" class="form-label fw-bold">Email (opsional)</label>
                                                     <input type="email" id="email" name="email"
                                                         class="form-control form-control-lg" placeholder="username@gmail.com">
-                                                </div>
+                                                </div> --}}
                                                 <button id="pay-button" class="btn btn-primary btn-uppercase btn-block mt-4 mb-2">Lanjutkan Pembayaran</button>
                                             </div>
 
@@ -208,7 +201,7 @@
                     _method: 'POST',
                     _token: '{{ csrf_token() }}',
                     name: $('#name').val(),
-                    email: email == null ? 'jarwonozt@gmail.com' : email,
+                    email: email == null ? 'nuonlinejakarta@gmail.com' : email,
                     amount: amount,
                     objective: objName
                 },
